@@ -107,8 +107,9 @@
             <input type="number" id="groupSelect" min="1" max="16" value="1" onchange="updateDashboard()">
         </div>
         <div class="input-group">
-            <label for="weekSelect">Semaine</label>
-            <select id="weekSelect" onchange="updateDashboard()"></select>
+            <label for="groupSelect">Mon Groupe (1-16)</label>
+            <input type="range" id="groupSelect" min="1" max="16" value="1" onchange="updateDashboard()" style="width: 100%; cursor: pointer; height: 8px;">
+            <span id="groupValue" style="text-align: center; font-weight: 600; color: #2563eb; margin-top: 0.5rem;">Groupe: 1</span>
         </div>
     </div>
 
